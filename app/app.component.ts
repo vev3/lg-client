@@ -3,24 +3,7 @@ import { HttpService } from "~/src/services/http.service";
 
 @Component({
   selector: "app-main",
-  templateUrl: "app.component.html",
-  styles: [
-    `
-      button {
-        width: 100rem;
-        height: 50rem;
-      }
-    `
-  ]
+  templateUrl: "app.component.html"
 })
 export class AppComponent {
-  constructor(private httpService: HttpService) {}
-  onTap() {
-    console.log("tapped");
-    console.log(
-      this.httpService
-        .get()
-        .subscribe(data => console.log(data))
-    );
-  }
 }

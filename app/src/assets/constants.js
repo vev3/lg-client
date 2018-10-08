@@ -1,0 +1,5 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.serverUrl = "http://10.152.3.177:4000/api";
+exports.questionRoute = [exports.serverUrl, 'question'].join('/');
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiY29uc3RhbnRzLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiY29uc3RhbnRzLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQWEsUUFBQSxTQUFTLEdBQUcsOEJBQThCLENBQUM7QUFDM0MsUUFBQSxhQUFhLEdBQUcsQ0FBQyxpQkFBUyxFQUFDLFVBQVUsQ0FBQyxDQUFDLElBQUksQ0FBQyxHQUFHLENBQUMsQ0FBQyIsInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCBjb25zdCBzZXJ2ZXJVcmwgPSBcImh0dHA6Ly8xMC4xNTIuMy4xNzc6NDAwMC9hcGlcIjtcclxuZXhwb3J0IGNvbnN0IHF1ZXN0aW9uUm91dGUgPSBbc2VydmVyVXJsLCdxdWVzdGlvbiddLmpvaW4oJy8nKTsiXX0=

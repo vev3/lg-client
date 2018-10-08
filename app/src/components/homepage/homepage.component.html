@@ -1,0 +1,18 @@
+<ActionBar title="Questions">
+    <ActionItem text="Back" android.systemIcon="sym_action_call"></ActionItem>
+    <!-- <NavigationButton text="Back" android.systemIcon="ic_menu_back" tap="onNavBtnTap" /> -->
+</ActionBar>
+
+<StackLayout>
+    <StackLayout class="h-90" dock="bottom" flexGrow="1">
+        <ListView #listView [items]="questions" class="list-group">
+            <div *ngFor="let question of questions">
+                <Label [text]="question.body" textWrap="true"></Label>
+            </div>
+        </ListView>
+    </StackLayout>
+    <!-- <FlexBoxLayout>
+        <Button text="Send" (tap)="onTap()" width="10%" class="btn btn-primary btn-active h-10"></Button>
+    </FlexBoxLayout> -->
+</StackLayout>
+<Label [text]="label"  textWrap="true"></Label>

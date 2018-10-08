@@ -5,6 +5,8 @@ import { NativeScriptModule } from "nativescript-angular/nativescript.module";
 import { AppComponent } from "./app.component";
 import { AppRoutingModule } from "./app.routing";
 import { HttpService } from "~/src/services/http.service";
+import { HomepageComponent } from "~/src/components/homepage/homepage.component";
+import { QuestionService } from "~/src/services/question.service";
 
 @NgModule({
   bootstrap: [AppComponent],
@@ -14,8 +16,8 @@ import { HttpService } from "~/src/services/http.service";
     NativeScriptHttpClientModule,
     NativeScriptFormsModule
   ],
-  declarations: [AppComponent],
-  providers: [HttpService],
+  declarations: [AppComponent, HomepageComponent],
+  providers: [HttpService, QuestionService],
   schemas: [NO_ERRORS_SCHEMA]
 })
 /*
