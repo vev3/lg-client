@@ -1,5 +1,9 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.serverUrl = "http://10.152.3.177:4000/api";
-exports.questionRoute = [exports.serverUrl, 'question'].join('/');
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiY29uc3RhbnRzLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiY29uc3RhbnRzLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQWEsUUFBQSxTQUFTLEdBQUcsOEJBQThCLENBQUM7QUFDM0MsUUFBQSxhQUFhLEdBQUcsQ0FBQyxpQkFBUyxFQUFDLFVBQVUsQ0FBQyxDQUFDLElBQUksQ0FBQyxHQUFHLENBQUMsQ0FBQyIsInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCBjb25zdCBzZXJ2ZXJVcmwgPSBcImh0dHA6Ly8xMC4xNTIuMy4xNzc6NDAwMC9hcGlcIjtcclxuZXhwb3J0IGNvbnN0IHF1ZXN0aW9uUm91dGUgPSBbc2VydmVyVXJsLCdxdWVzdGlvbiddLmpvaW4oJy8nKTsiXX0=
+exports.port = "4000";
+exports.serverMachineIP = "10.152.3.177";
+// export const serverMachineIP = "25.39.177.156";
+exports.serverUrl = "http://" + exports.serverMachineIP + ":" + exports.port + "/api";
+exports.wsUrl = "ws://" + exports.serverMachineIP + ":" + exports.port;
+exports.questionRoute = [exports.serverUrl, "question"].join("/");
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiY29uc3RhbnRzLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiY29uc3RhbnRzLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQWEsUUFBQSxJQUFJLEdBQUcsTUFBTSxDQUFDO0FBQ2QsUUFBQSxlQUFlLEdBQUcsY0FBYyxDQUFDO0FBQzlDLGtEQUFrRDtBQUNyQyxRQUFBLFNBQVMsR0FBRyxZQUFVLHVCQUFlLFNBQUksWUFBSSxTQUFNLENBQUM7QUFDcEQsUUFBQSxLQUFLLEdBQUcsVUFBUSx1QkFBZSxTQUFJLFlBQU0sQ0FBQztBQUMxQyxRQUFBLGFBQWEsR0FBRyxDQUFDLGlCQUFTLEVBQUUsVUFBVSxDQUFDLENBQUMsSUFBSSxDQUFDLEdBQUcsQ0FBQyxDQUFDIiwic291cmNlc0NvbnRlbnQiOlsiZXhwb3J0IGNvbnN0IHBvcnQgPSBcIjQwMDBcIjtcclxuZXhwb3J0IGNvbnN0IHNlcnZlck1hY2hpbmVJUCA9IFwiMTAuMTUyLjMuMTc3XCI7XHJcbi8vIGV4cG9ydCBjb25zdCBzZXJ2ZXJNYWNoaW5lSVAgPSBcIjI1LjM5LjE3Ny4xNTZcIjtcclxuZXhwb3J0IGNvbnN0IHNlcnZlclVybCA9IGBodHRwOi8vJHtzZXJ2ZXJNYWNoaW5lSVB9OiR7cG9ydH0vYXBpYDtcclxuZXhwb3J0IGNvbnN0IHdzVXJsID0gYHdzOi8vJHtzZXJ2ZXJNYWNoaW5lSVB9OiR7cG9ydH1gO1xyXG5leHBvcnQgY29uc3QgcXVlc3Rpb25Sb3V0ZSA9IFtzZXJ2ZXJVcmwsIFwicXVlc3Rpb25cIl0uam9pbihcIi9cIik7XHJcbiJdfQ==

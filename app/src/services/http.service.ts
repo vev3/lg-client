@@ -8,4 +8,8 @@ export class HttpService {
   get<T>(url) {
     return this.http.get<T>(url);
   }
+
+  post<T>(url,body){
+    return this.http.post<T>(url,body);
+  }
 }

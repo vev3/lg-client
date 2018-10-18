@@ -1,2 +1,6 @@
-export const serverUrl = "http://10.152.3.177:4000/api";
-export const questionRoute = [serverUrl,'question'].join('/');
+export const port = "4000";
+export const serverMachineIP = "10.152.3.177";
+// export const serverMachineIP = "25.39.177.156";
+export const serverUrl = `http://${serverMachineIP}:${port}/api`;
+export const wsUrl = `ws://${serverMachineIP}:${port}`;
+export const questionRoute = [serverUrl, "question"].join("/");

@@ -12,4 +12,8 @@ export class QuestionService {
   fetchQuestions() {
     return this.httpService.get<Question[]>(questionRoute);
   }
+
+  save(question: Question){
+    return this.httpService.post<Question>(questionRoute,question);
+  }
 }

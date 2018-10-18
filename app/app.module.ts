@@ -7,6 +7,9 @@ import { AppRoutingModule } from "./app.routing";
 import { HttpService } from "~/src/services/http.service";
 import { HomepageComponent } from "~/src/components/homepage/homepage.component";
 import { QuestionService } from "~/src/services/question.service";
+import { QuestionFormComponent } from "~/src/components/question-form/question-form.component";
+import { WebsocketService } from "./src/services/websocket.service";
+import { FormsModule } from "@angular/forms";
 
 @NgModule({
   bootstrap: [AppComponent],
@@ -14,10 +17,11 @@ import { QuestionService } from "~/src/services/question.service";
     NativeScriptModule,
     AppRoutingModule,
     NativeScriptHttpClientModule,
-    NativeScriptFormsModule
+    NativeScriptFormsModule,
+    FormsModule
   ],
-  declarations: [AppComponent, HomepageComponent],
-  providers: [HttpService, QuestionService],
+  declarations: [AppComponent, HomepageComponent, QuestionFormComponent],
+  providers: [HttpService, QuestionService, WebsocketService],
   schemas: [NO_ERRORS_SCHEMA]
 })
 /*

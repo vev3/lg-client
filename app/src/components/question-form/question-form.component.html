@@ -1,0 +1,7 @@
+<StackLayout>
+    <Label [text]="'Question title'"></Label>
+    <TextField hint="Enter title" [(ngModel)]="question.title" class="input input-border"></TextField>
+    <Label [text]="'Question body'"></Label>
+    <TextField hint="Enter body" [(ngModel)]="question.body" class="input input-border"></TextField>
+    <Button text="Submit" (tap)="onSubmit()" class="btn btn-primary btn-active"></Button>
+</StackLayout>

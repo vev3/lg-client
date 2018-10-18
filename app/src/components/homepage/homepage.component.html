@@ -1,13 +1,15 @@
 <ActionBar title="Questions">
-    <ActionItem text="Back" android.systemIcon="sym_action_call"></ActionItem>
-    <!-- <NavigationButton text="Back" android.systemIcon="ic_menu_back" tap="onNavBtnTap" /> -->
+    <ActionItem text="New question" [nsRouterLink]="['/question']"></ActionItem>
 </ActionBar>
 
 <StackLayout>
     <StackLayout class="h-90" dock="bottom" flexGrow="1">
         <ListView #listView [items]="questions" class="list-group">
             <div *ngFor="let question of questions">
-                <Label [text]="question.body" textWrap="true"></Label>
+                <div>
+                    <Label [text]="question.body" textWrap="true" class="question-body"></Label>
+                    <Label [text]="question.date | date:'medium'" class="question-date"></Label>
+                </div>
             </div>
         </ListView>
     </StackLayout>
@@ -15,4 +17,5 @@
         <Button text="Send" (tap)="onTap()" width="10%" class="btn btn-primary btn-active h-10"></Button>
     </FlexBoxLayout> -->
 </StackLayout>
-<Label [text]="label"  textWrap="true"></Label>
+<i class="fas fa-plus"></i>tns
+<Label [text]="label" textWrap="true"></Label>

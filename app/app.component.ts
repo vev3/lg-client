@@ -1,9 +1,10 @@
 import { Component } from "@angular/core";
-import { HttpService } from "~/src/services/http.service";
+import { Fontawesome } from "nativescript-fontawesome";
+
+Fontawesome.init();
 
 @Component({
   selector: "app-main",
   templateUrl: "app.component.html"
 })
-export class AppComponent {
-}
+export class AppComponent {}
