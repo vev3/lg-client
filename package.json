@@ -1,6 +1,6 @@
 {
     "nativescript": {
-        "id": "org.nativescript.lgclient",
+        "id": "lg.project.vev",
         "tns-android": {
             "version": "4.2.0"
         },
@@ -9,7 +9,7 @@
         }
     },
     "scripts": {
-        "start":"tns run android"
+        "start": "tns run android"
     },
     "description": "NativeScript Application",
     "license": "SEE LICENSE IN <your-license-filename>",
@@ -27,6 +27,9 @@
         "nativescript-angular": "~6.1.0",
         "nativescript-theme-core": "~1.0.4",
         "reflect-metadata": "~0.1.8",
+        "nativescript-camera": "^0.0.8",
+        "nativescript-iqkeyboardmanager": "^1.0.1",
+        "nativescript-plugin-firebase": "^3.8.4",
         "rxjs": "^6.3.3",
         "tns-core-modules": "~4.2.0",
         "zone.js": "^0.8.26"

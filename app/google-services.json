@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "412733339355",
+    "firebase_url": "https://vev-project-lg.firebaseio.com",
+    "project_id": "vev-project-lg",
+    "storage_bucket": "vev-project-lg.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:412733339355:android:9bb4129ff2f764a6",
+        "android_client_info": {
+          "package_name": "lg.project.vev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "412733339355-qilecl7jo7c2gg7aqeiqa574kld9c64b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8EMv4ViFfvWMSie6vwrsLyo9RE8epvDE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
