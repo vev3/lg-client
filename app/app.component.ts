@@ -14,7 +14,7 @@ import { HttpService } from "~/src/services/http.service";
   ]
 })
 export class AppComponent {
-  constructor(private httpService: HttpService) {}
+  constructor(private httpService: HttpService, private db: AngularFire) {}
   onTap() {
     console.log("tapped");
     console.log(
